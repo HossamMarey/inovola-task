@@ -18,7 +18,7 @@ const MainHeader = (props) => {
           <Link href="/">
             <a className="header__brand--logo">
               <img
-                src="/images/logo.svg"
+                src="/images/main-logo.svg"
                 alt="Logo"
                 className="h-11 object-contain "
               />
