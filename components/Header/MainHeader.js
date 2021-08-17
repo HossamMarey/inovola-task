@@ -8,13 +8,9 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
-import { useTranslation } from "next-i18next";
-
 import LangBtn from "./LangBtn";
 
 const MainHeader = (props) => {
-  const { t } = useTranslation();
-
   return (
     <header className="bg-white shadow-sm py-4">
       <div className="container flex items-center justify-between">
