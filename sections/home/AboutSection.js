@@ -2,53 +2,49 @@ import React from "react";
 import Image from "next/image";
 
 import { useTranslation } from "next-i18next";
+import { Button } from "antd";
+import { FiPlay } from "react-icons/fi";
+import { FaPlay } from "react-icons/fa";
 
 const AboutSection = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="bg-gray-main-light mt-24 py-12">
+    <section className="bg-gray-main-light py-12">
       <div className="container flex flex-wrap ">
-        <div className="w-full lg:w-1/2 pe-0 lg:pe-4">
-          <h2 className="font-bold text-2xl mb-10"> {t("About BuilderZ")} </h2>
+        <div className="w-full md:w-1/2 pe-0 md:pe-4  ">
+          <h2 className="font-bold text-2xl mb-10">{t("About Our Academy")}</h2>
           <p className="mb-5 leading-7">
             {t(
-              "The most important mission we should accomplish to make the world a better place is building our kid's characters to set their minds through learning them human core values and principles that should lead them always to make the right decisions about the life's paths, it will take a huge effort and corporation work between three sectors \" the parents, teachers and the creative learning methods and tools that fit for each kid representing in BuilderZ."
+              "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros."
             )}
           </p>
           <p className="mb-5 leading-7">
             {t(
-              "So, we are here to contribute as experts and thought leaders in the educational field and raising kids to destinate this efforts correctly with found a platform include everything is needed by:"
+              "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque eros. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros."
             )}
           </p>
 
-          <ol className="list-decimal list-inside mb-5 leading-7">
-            <li>
-              {t("kids, to qualify in all personal, social,scientific skills.")}
-            </li>
-            <li>{t("Parents, to help them in preparing their kids well.")}</li>
-            <li>
-              {t(
-                "Teachers, to complete the missing line in the balance raising triangle for kids, though influence them positively by using multi educational tools."
-              )}
-            </li>
-          </ol>
-
-          <a
-            href="#"
-            className="px-5 py-2 rounded-md shadow-sm inline-block   border-2 border-primary  hover:bg-primary hover:shadow-md font-medium text-base me-6 text-primary hover:text-white"
+          <Button
+            type="primary"
+            ghost
+            size="large"
+            className="border-2 rounded-md"
           >
             {t("Read More")}
-          </a>
+          </Button>
         </div>
-        <div className="w-full lg:w-1/2 relative ps-0 lg:ps-4 hidden lg:block">
+        <div className="w-full md:w-1/2 relative ps-0 md:ps-4 block   h-60 md:h-auto mt-6 md:mt-0  ">
           <Image
             src="/images/about.jpg"
             alt="about builderz"
             layout="fill"
             objectFit="cover"
-            className="w-full rounded-md shadow-sm"
+            className="w-full rounded-md shadow-sm     "
           />
+          <div className="absolute top-1/2 left-1/2 bg-white rounded-full w-14  h-14 flex items-center justify-center cursor-pointer transform -translate-x-1/2 -translate-y-1/2 hover:shadow-xl">
+            <FaPlay size={24} className="text-primary " />
+          </div>
         </div>
       </div>
     </section>

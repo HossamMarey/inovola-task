@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import MainHead from "@/components/seo/MainHead";
 
 const Layouts = (props) => {
+  const { header, footer } = props;
   const router = useRouter();
   useEffect(() => {
     // lang and dir
@@ -26,9 +27,10 @@ const Layouts = (props) => {
   return (
     <>
       <MainHead {...props} />
-      <Header {...props} />
+      {header !== false && <Header {...props} />}
+
       <main>{props.children}</main>
-      <Footer {...props} />
+      {footer !== false && <Footer {...props} />}
     </>
   );
 };

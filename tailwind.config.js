@@ -11,24 +11,25 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          dark: "#56b6b8",
-          DEFAULT: "#60CBCC",
-          light: "#67f9fb",
+          dark: "var(--color-primary-dark ,#56b6b8 )",
+          DEFAULT: "var(--color-primary , #60CBCC )",
+          light: "var(--color-primary , #67f9fb )",
         },
         secondary: {
-          dark: "#b86420",
-          DEFAULT: "#EC832E",
-          light: "#ffb170",
+          dark: "var(--color-secondary-dark ,#b86420 )",
+          DEFAULT: "var(--color-secondary , #EC832E )",
+          light: "var(--color-secondary-light ,#ffb170 )",
         },
 
         "gray-main": {
-          dark: "#303D48",
-          DEFAULT: "#555555",
-          light: "#F7F7F7",
+          dark: "var(--color-gray-main-dark ,#303D48 )",
+          DEFAULT: "var(--color-gray-main ,#555555 )",
+          light: "var(--color-gray-main-light ,#F7F7F7 )",
         },
+        "gray-light": "var(--color-gray-light ,#AEAEAE )",
       },
       fontFamily: {
-        Poppins: ["Poppins, sans-serif"],
+        Poppins: ["var(--en-font , 'Poppins, sans-serif' )"],
       },
       container: {
         center: true,
